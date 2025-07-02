@@ -10,6 +10,10 @@ ipykernel = "*"
 xarray = "*"
 matplotlib = "*"
 seaborn = "*"
+tqdm = "*"
+scikit-learn = "*"
+scikit-lego = "*"
+scores = "*"
 
 [dev-packages]
 
