@@ -20,7 +20,7 @@ def bootstrap_bayesian(data, bootstrap_size=1000, random_generator=None):
     n = len(data)
     
     weights = random_generator.dirichlet(np.ones(n), size=bootstrap_size)
-    return (data.T * weights).T
+    return (data.T * weights).T * n
 
 def bootstrap_with_jitter(data, bootstrap_size=1000, random_generator=None):
     random_generator = random_generator or np.random.default_rng()
